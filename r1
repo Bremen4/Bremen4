@@ -1,0 +1,24 @@
+#include<ZumoMotors.h>
+int speed=100;
+
+ZumoMotors motors;
+void setup(){
+//移动前给视觉信号
+motors.setLeftSpeed(speed);
+motors.setRightSpeed(speed);
+delay(4000);
+//左转90度
+motors.setLeftSpeed(speed);
+motors.setRightSpeed(speed);
+delay(9000);
+//右转90度
+motors.setLeftSpeed(speed);
+motors.setRightSpeed(speed);
+delay(3000);
+//停止
+//motors.setLeftSpeed(0);
+//motors.setRightSpeed(0);
+delay(5000);
+}
+void loop(){
+}
